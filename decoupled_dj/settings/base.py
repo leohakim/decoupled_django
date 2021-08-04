@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     "users.apps.UsersConfig",
     "billing.apps.BillingConfig",
     "rest_framework",  # enables DRF
+    # "corsheaders",
 ]
 
 MIDDLEWARE = [

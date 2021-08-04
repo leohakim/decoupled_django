@@ -75,8 +75,8 @@ export default {
     handleSubmit: function (event) {
       // eslint-disable-next-line no-unused-vars
       const formData = new FormData(event.target);
-
       const data = Object.fromEntries(formData);
+
       data.items = [{
         quantity: formData.get("quantity"),
         description: formData.get("description"),
@@ -84,9 +84,13 @@ export default {
         taxed: Boolean(formData.get("taxed"))
       }];
 
+      const csrfToken = this.$cookies.get("csrftoken");
       fetch("/billing/api/invoices/", {
         method: "POST",
-        headers: {"Content-Type": "application/json"},
+        headers: {
+          "Content-Type": "application/json",
+          "X-CSRFToken": csrfToken
+        },
         body: JSON.stringify(data)
       })
           .then(response => {
