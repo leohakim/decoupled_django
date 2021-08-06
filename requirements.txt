@@ -1,0 +1,2 @@
+# this file works only for Heroku
+-r requirements/production.txt
