@@ -1,3 +1,4 @@
+import os
 from .base import *  # noqa
 
 SECURE_SSL_REDIRECT = True
@@ -16,3 +17,7 @@ REST_FRAMEWORK = {
     **REST_FRAMEWORK,
     "DEFAULT_RENDERER_CLASSES": ["rest_framework.renderers.JSONRenderer"]
 }
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
