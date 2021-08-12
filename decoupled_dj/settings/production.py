@@ -1,5 +1,5 @@
-import os
 from .base import *  # noqa
+import os
 
 SECURE_SSL_REDIRECT = True
 ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
