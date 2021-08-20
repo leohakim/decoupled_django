@@ -1,5 +1,6 @@
-import environ
 from pathlib import Path
+
+import environ
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -17,10 +18,13 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    "rest_framework",
+    "corsheaders",
+
     "users.apps.UsersConfig",
     "billing.apps.BillingConfig",
-    "rest_framework",  # enables DRF
-    "corsheaders",
+    "blog.apps.BlogConfig",
 ]
 
 MIDDLEWARE = [
@@ -85,6 +89,8 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = env("STATIC_URL")
+
+STATIC_ROOT = STATIC_URL
 
 AUTH_USER_MODEL = "users.User"
 
