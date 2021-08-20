@@ -1,10 +1,12 @@
+from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
-from django.conf import settings
 
 urlpatterns = [
     path("billing/", include("billing.urls", namespace="billing")),
+    path("blog/", include("blog.urls", namespace="blog"))
 ]
+
 if settings.DEBUG:
     urlpatterns = [
                       path("admin/", admin.site.urls),
