@@ -8,6 +8,10 @@
 
 ` make development`
 
-- Run Frontend (Vue Billing SPA)
+- Run Billing SPA Frontend (Vue)
 
 ` ./billing/vue_spa/npm run serve`
+
+- Run Blog Frontend (React - NextJS)
+
+` ./next-blog/npm run start`
