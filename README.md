@@ -6,12 +6,12 @@
 
 - Run Backend (uvicorn):
 
-` make development`
+` make djangoDev`
 
 - Run Billing SPA Frontend (Vue)
 
-` ./billing/vue_spa/npm run serve`
+` make billing`
 
 - Run Blog Frontend (React - NextJS)
 
-` ./next-blog/npm run start`
+` make blogNextJs`
