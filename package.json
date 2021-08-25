@@ -1,0 +1,23 @@
+{
+  "name": "decoupled-dj",
+  "version": "1.0.0",
+  "description": "- Install for development:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leohakim/decoupled_django.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leohakim/decoupled_django/issues"
+  },
+  "homepage": "https://github.com/leohakim/decoupled_django#readme",
+  "devDependencies": {
+    "cypress": "^8.3.0"
+  }
+}

@@ -10,7 +10,7 @@
 
 - Run Billing SPA Frontend (Vue)
 
-` make billing`
+` make billingForm`
 
 - Run Blog Frontend (React - NextJS)
 
