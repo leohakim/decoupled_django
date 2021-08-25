@@ -120,3 +120,4 @@ venv.bak/
 
 # others
 borrar/
+node_modules/
