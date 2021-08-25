@@ -12,6 +12,6 @@ blogNextJs:
 cypressTest:
 	./node_modules/.bin/cypress open
 
-test:
+drfTest:
 	export DJANGO_SETTINGS_MODULE=decoupled_dj.settings.testing
 	pytest

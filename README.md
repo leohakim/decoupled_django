@@ -15,3 +15,11 @@
 - Run Blog Frontend (React - NextJS)
 
 ` make blogNextJs`
+
+- Run Cypress Tests
+
+` make cypressTest`
+
+- Run DRF Tests
+
+` make drfTest`
