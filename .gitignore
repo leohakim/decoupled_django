@@ -121,3 +121,4 @@ venv.bak/
 # others
 borrar/
 node_modules/
+decoupleddjango.sqlite3

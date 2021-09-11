@@ -21,11 +21,15 @@ INSTALLED_APPS = [
 
     "rest_framework",
     "corsheaders",
+    "ariadne.contrib.django",
 
     "users.apps.UsersConfig",
     "billing.apps.BillingConfig",
     "blog.apps.BlogConfig",
+    "login",
 ]
+
+LOGIN_REDIRECT_URL = "/"
 
 MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
