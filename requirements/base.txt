@@ -2,3 +2,4 @@ Django==3.2.6
 django-environ==0.4.5
 uvicorn==0.14.0
 djangorestframework==3.12.4
+ariadne==0.13.0
