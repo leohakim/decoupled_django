@@ -21,7 +21,8 @@ INSTALLED_APPS = [
 
     "rest_framework",
     "corsheaders",
-    "ariadne.contrib.django",
+    # "ariadne.contrib.django",
+    "strawberry.django",
 
     "users.apps.UsersConfig",
     "billing.apps.BillingConfig",
